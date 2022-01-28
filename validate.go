@@ -10,8 +10,8 @@ import (
 	"regexp"
 
 	"github.com/beevik/etree"
-	"github.com/russellhaering/goxmldsig/etreeutils"
-	"github.com/russellhaering/goxmldsig/types"
+	"github.com/gmontagu/goxmldsig/etreeutils"
+	"github.com/gmontagu/goxmldsig/types"
 )
 
 var whiteSpace = regexp.MustCompile("\\s+")
