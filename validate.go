@@ -457,7 +457,7 @@ func (ctx *ValidationContext) verifyCertificate(sig *types.Signature, verify boo
 		}
 		opts := x509.VerifyOptions{
 			Roots:     pool,
-			KeyUsages: []x509.ExtKeyUsage{x509.ExtKeyUsageCodeSigning},
+			KeyUsages: []x509.ExtKeyUsage{x509.ExtKeyUsageAny},
 		}
 
 		_, err := cert.Verify(opts)
